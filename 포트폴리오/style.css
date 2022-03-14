@@ -231,7 +231,7 @@ p{
 #main h1{
     display: block;
     width: fit-content;
-    font-size: 4rem;
+    font-size: 5rem;
     position: relative;
     color: transparent;
     animation: text_reveal .5s ease forwards;
@@ -269,26 +269,26 @@ p{
 
 /* end main section */
 
-/* start service section */
-#services .services{
+/* start skill section */
+#skills .skills{
     flex-direction: column;
     text-align: center;
     max-width: 1500px;
     margin: 0 auto;
     padding: 100px 0;
 }
-#services .service-top{
+#skills .skill-top{
     max-width: 500px;
     width: 0 auto;
 }
-#services .service-bottom{
+#skills .skill-bottom{
     margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
-#services .service-item{
+#skills .skill-item{
     flex-basis: 80%;
     display: flex;
     align-items: flex-start;
@@ -303,7 +303,7 @@ p{
     z-index: 1;
     overflow: hidden;
 }
-#services .service-item::after{
+#skills .skill-item::after{
     content: '';
     position: absolute;
     left: 0;
@@ -314,22 +314,22 @@ p{
     opacity: .7 ;
     z-index: -1;
 }
-#services .service-bottom .icon{
+#skills .skill-bottom .icon{
     height: 80px;
     width: 80px;
     margin-bottom: 20px;
 }
-#services .service-item h2{
+#skills .skill-item h2{
     font-size: 2rem;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-#services .service-item p{
+#skills .skill-item p{
     color:white;
     text-align: left;
 }
-/* end service section */
+/* end skill section */
 
 /* start project section */
 #projects .projects{
@@ -420,13 +420,19 @@ p{
     width: 100%;
 }
 #about .col-right h2{
-    font-size: 1.8rem;
+    font-size: 3rem;
     font-weight: 500;
     letter-spacing: .2rem;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 #about .col-right p{
     margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+#about .col-right p span{
+    font-size: 2.2rem;
+    color: darkgrey
 }
 #about .col-right .cta {
     color: black;
@@ -582,12 +588,12 @@ p{
         font-size: 7rem;
     }
     /* end main */
-    /* service */
-    #services .service-bottom .service-item{
+    /* skill */
+    #skills .skill-bottom .skill-item{
         flex-basis: 45%;
         margin: 2.5%;
     }
-    /* end service */
+    /* end skill */
 
     /* project */
     #projects .project-item{
@@ -695,7 +701,7 @@ p{
         display: none;
     }
     /* End header */
-    #services .service-bottom .service-item{
+    #skills .skill-bottom .skill-item{
         flex-basis: 22%;
         margin: 1.5%;
     }
